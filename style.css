@@ -1,0 +1,50 @@
+:root {
+  --space: #0B0F2A;
+  --violet: #3A1C71;
+  --rose: #D76D77;
+  --amber: #FFAF7B;
+  --text: #ECE8F4;
+  --muted: #A8A2BD;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 75% -10%, rgba(215,109,119,.28), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(58,28,113,.6), transparent 60%),
+    var(--space);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+a { color: var(--amber); }
+nav {
+  max-width: 880px; margin: 0 auto; padding: 28px 24px;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+nav .brand { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text); text-decoration: none; }
+nav .brand span { color: var(--amber); }
+nav .links a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: .95rem; }
+nav .links a:hover { color: var(--text); }
+main { max-width: 880px; margin: 0 auto; padding: 24px 24px 80px; }
+.hero { padding: 72px 0 48px; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin: 0 0 20px; }
+.hero h1 .seam {
+  background: linear-gradient(90deg, var(--amber), var(--rose));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero p { font-size: 1.2rem; color: var(--muted); max-width: 620px; margin: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 40px; }
+.card {
+  border: 1px solid rgba(255,175,123,.18); border-radius: 14px; padding: 22px;
+  background: rgba(11,15,42,.55);
+}
+.card h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--amber); }
+.card p { margin: 0; color: var(--muted); font-size: .97rem; }
+.doc h1 { font-size: 2.2rem; margin: 40px 0 4px; }
+.doc .updated { color: var(--muted); margin: 0 0 32px; }
+.doc h2 { font-size: 1.2rem; margin: 36px 0 8px; color: var(--amber); }
+.doc li { margin: 6px 0; }
+footer { max-width: 880px; margin: 0 auto; padding: 24px; color: var(--muted); font-size: .9rem; border-top: 1px solid rgba(255,255,255,.08); }
+footer a { color: var(--muted); margin-right: 16px; }
