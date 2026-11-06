@@ -1,45 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eldersire Studios</title>
-  <meta name="description" content="Eldersire Studios is a one-person AI film studio making original short-form stories.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eldersire Studios — Independent AI Filmmaking</title>
+<meta name="description" content="Eldersire Studios is an independent, human-directed film studio making original animated stories with AI.">
+<meta property="og:title" content="Eldersire Studios — Independent AI Filmmaking">
+<meta property="og:description" content="Eldersire Studios is an independent, human-directed film studio making original animated stories with AI.">
+<meta property="og:image" content="https://eldersirestudios.com/assets/img/poster.jpg">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%235fe6ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a class="brand" href="./">Eldersire <span>Studios</span></a>
-    <div class="links">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Eldersire Studios home"><span class="dot"></span>Eldersire Studios</a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="nav-links"><a href="films.html">Films</a><a href="studio.html">Studio</a><a href="lab.html">Lab</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <video src="assets/film/hero_loop.mp4" muted loop playsinline autoplay data-loop></video>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow load">Independent AI Filmmaking &amp; Creative Technology</span>
+      <h1 class="display load d1">Stories from<br><em>worlds</em> that<br>don't exist yet.</h1>
+      <p class="lede load d2">Eldersire Studios is an independent, human-directed film studio. We build original characters and worlds, and use AI the way a studio uses a camera crew: every frame is directed, checked and finished by hand.</p>
+      <div class="btns load d3">
+        <a class="btn primary" href="rust-titan.html">Watch Rust Titan <span class="arr">→</span></a>
+        <a class="btn" href="studio.html">Behind the Studio</a>
+      </div>
     </div>
-  </nav>
-  <main>
-    <section class="hero">
-      <h1>Original stories,<br><span class="seam">made with AI.</span></h1>
-      <p>Eldersire Studios is a one-person AI film studio. Every character and world is original,
-         and every video is reviewed and approved by a human before it is published.</p>
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>Original worlds</h3>
-        <p>Original characters only, kept consistent by a locked style and character bible.</p>
+    <a class="hero-film load d4" href="rust-titan.html" aria-label="Rust Titan">
+      <div class="frame"><video src="assets/film/hero_loop.mp4" poster="assets/img/frame_19.jpg" muted loop playsinline autoplay data-loop></video></div>
+      <div class="frame-cap"><span>Now showing</span><b>Rust Titan</b></div>
+    </a>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="manifesto rv">A small studio with a simple rule: <span>the machines generate,</span> a human directs. <span>Original characters, locked designs, and nothing released until it passes our own quality bar.</span></p>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap feature">
+    <a class="rv" href="rust-titan.html"><div class="frame"><img src="assets/img/poster.jpg" alt="The Rust Titan standing over Sola in the desert"></div></a>
+    <div class="rv d1">
+      <span class="eyebrow">Featured film · 001</span>
+      <h2>Rust Titan</h2>
+      <p class="lede">A young explorer brushes the sand from a strange rusted dome. Something ancient opens its eye.</p>
+      <dl class="meta">
+        <div><dt>Format</dt><dd>Vertical short · 25s</dd></div>
+        <div><dt>Style</dt><dd>Anime-inspired sci-fi</dd></div>
+        <div><dt>Released</dt><dd>November 2026</dd></div>
+        <div><dt>Finishing</dt><dd>DaVinci Resolve, music &amp; sound by hand</dd></div>
+      </dl>
+      <div class="btns">
+        <a class="btn primary" href="rust-titan.html">Watch &amp; read the making-of <span class="arr">→</span></a>
       </div>
-      <div class="card">
-        <h3>Automated pipeline</h3>
-        <p>Script, images, motion, sound and edit run as an automated daily pipeline.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Films</span><h2 class="rv d1">The slate</h2></div>
+      <a class="link rv" href="films.html">All films</a>
+    </div>
+    <div class="films">
+      <a class="card-film rv" href="rust-titan.html">
+        <div class="frame"><img src="assets/img/frame_19.jpg" alt="Rust Titan"><video src="assets/film/hero_loop.mp4" muted loop playsinline preload="none"></video></div>
+        <div class="info"><h3>Rust Titan</h3><span class="tag live">● Out now</span></div>
+        <p>Anime cinematic · discovery &amp; atmosphere</p>
+      </a>
+      <div class="card-film soon rv d1">
+        <div class="frame"><span>002</span></div>
+        <div class="info"><h3>Rust Titan II</h3><span class="tag">In development</span></div>
+        <p>What wakes the Titan up was only the beginning.</p>
       </div>
-      <div class="card">
-        <h3>Human approved</h3>
-        <p>Nothing is posted until the studio owner reviews it and approves it.</p>
+      <div class="card-film soon rv d2">
+        <div class="frame"><span>003</span></div>
+        <div class="info"><h3>Untitled</h3><span class="tag">Coming soon</span></div>
+        <p>A new original world. Sci-fi short.</p>
       </div>
-    </section>
-  </main>
-  <footer>
-    &copy; <span id="y">2026</span> Eldersire Studios &middot;
-    <a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a>
-  </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">Explore the studio</span><h2 class="rv d1">Three ways in</h2></div></div>
+    <div class="doors">
+      <div class="door rv">
+        <span class="num">i.</span><h3>Watch the films</h3>
+        <p>Short, cinematic stories in original worlds. Built for your phone, made to be rewatched.</p>
+        <a class="link" href="films.html">Films</a>
+      </div>
+      <div class="door rv d1">
+        <span class="num">ii.</span><h3>See how they're made</h3>
+        <p>The creative direction, the production pipeline and the human decisions behind every shot, from raw AI footage to final cut.</p>
+        <a class="link" href="studio.html">Behind the Studio</a>
+      </div>
+      <div class="door rv d2">
+        <span class="num">iii.</span><h3>Follow the experiments</h3>
+        <p>Model shoot-outs, consistency tests and the failures that taught us the most. Updated as we go.</p>
+        <a class="link" href="lab.html">The Lab</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">From the production</span><h2 class="rv d1">Frames from Rust Titan</h2></div>
+      <a class="link rv" href="rust-titan.html">The making-of</a>
+    </div>
+    <div class="strip rv">
+      <img src="assets/img/frame_1.jpg" alt="Sola crossing the machine graveyard">
+      <img src="assets/img/frame_4.jpg" alt="Sola brushing sand from the dome">
+      <img src="assets/img/frame_8.5.jpg" alt="Her hand on the rusted metal">
+      <img src="assets/img/frame_10.jpg" alt="Electric sparks under her palm">
+      <img src="assets/img/frame_12.jpg" alt="The Titan's eye opens">
+      <img src="assets/img/frame_19.jpg" alt="The Titan stands">
+    </div>
+  </div>
+</section>
+
+<section class="cta rule">
+  <div class="wrap">
+    <div class="eye" aria-hidden="true"></div>
+    <h2 class="rv">New films, experiments and<br><em>behind-the-scenes</em> as they happen.</h2>
+    <div class="btns rv d1">
+      <a class="btn primary" href="https://www.youtube.com/channel/UCCBXbzFrJePExFDeBLUWiGw" target="_blank" rel="noopener">YouTube <span class="arr">→</span></a>
+      <a class="btn" href="https://x.com/RishiPatlolla" target="_blank" rel="noopener">Follow on X</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><span class="dot"></span>Eldersire Studios</a>
+      <p class="small" style="margin-top:16px;max-width:320px">An independent, human-directed film studio exploring what AI filmmaking can be. Original worlds only.</p>
+    </div>
+    <div><h5>Studio</h5><ul><li><a href="films.html">Films</a></li><li><a href="studio.html">Behind the Studio</a></li><li><a href="lab.html">The Lab</a></li><li><a href="about.html">About</a></li></ul></div>
+    <div><h5>Follow</h5><ul><li><a href="https://www.youtube.com/channel/UCCBXbzFrJePExFDeBLUWiGw" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://x.com/RishiPatlolla" target="_blank" rel="noopener">X</a></li></ul></div>
+    <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="fine"><span>&copy; <span id="y">2026</span> Eldersire Studios. All characters and worlds are original.</span><span>Made by a human, with AI.</span></div>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>

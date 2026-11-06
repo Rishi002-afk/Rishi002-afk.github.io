@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Behind the Studio — Eldersire Studios</title>
+<meta name="description" content="How Eldersire Studios makes films: human creative direction, an automated AI production pipeline and hands-on finishing.">
+<meta property="og:title" content="Behind the Studio — Eldersire Studios">
+<meta property="og:description" content="How Eldersire Studios makes films: human creative direction, an automated AI production pipeline and hands-on finishing.">
+<meta property="og:image" content="https://eldersirestudios.com/assets/img/poster.jpg">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%235fe6ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Eldersire Studios home"><span class="dot"></span>Eldersire Studios</a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="nav-links"><a href="films.html">Films</a><a href="studio.html" class="on">Studio</a><a href="lab.html">Lab</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-head">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow load">Behind the Studio</span>
+    <h1 class="load d1">Human-directed.<br><em>Machine-assisted.</em></h1>
+    <p class="lede load d2">AI makes the footage. A person decides what it should be, rejects what isn't good enough and finishes what is. This is how the studio actually works, from the first idea to the posted film.</p>
+  </div>
+</section>
+
+<section class="sec tight rule">
+  <div class="wrap">
+    <div class="pillars">
+      <div class="pillar rv">
+        <span class="who">Human</span><h3>Creative direction</h3>
+        <ul><li>Concept and story beats</li><li>Shot-by-shot script: framing, angle, lens, camera movement</li><li>Character and world design, locked in a style bible</li><li>Keyframe approval before anything is animated</li></ul>
+      </div>
+      <div class="pillar rv d1">
+        <span class="who">Automated</span><h3>AI production</h3>
+        <ul><li>Claude plans shots and orchestrates the run</li><li>Runway API generates keyframes and motion</li><li>Automated quality checks on every shot</li><li>Python and FFmpeg assemble the picture</li></ul>
+      </div>
+      <div class="pillar rv d2">
+        <span class="who">Human</span><h3>Finishing</h3>
+        <ul><li>Frame-by-frame review of every take</li><li>Music selection and sound design</li><li>Edit, grade and export in DaVinci Resolve</li><li>Final approval. Nothing posts without it.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">The pipeline</span><h2 class="rv d1">From script to screen</h2></div>
+      <p class="lede rv d2" style="max-width:460px">Eight stages. The automated ones run on GitHub Actions; the human ones are where the film actually gets made.</p>
+    </div>
+    <div class="pipe">
+      <div class="stage human rv"><span class="n">01</span><h4>Script</h4><p>Story beats become a shot list with framing, angle, lens, movement, and start and end frames.</p><span class="tool">Rishi · Claude</span></div>
+      <div class="stage rv d1"><span class="n">02</span><h4>Design refs</h4><p>Characters and locations are generated once, approved, and locked as references.</p><span class="tool">Nano Banana Pro</span></div>
+      <div class="stage rv d2"><span class="n">03</span><h4>Keyframes</h4><p>One keyframe per shot, built from the locked references and approved before animation.</p><span class="tool">Runway API</span></div>
+      <div class="stage rv d3"><span class="n">04</span><h4>Shots</h4><p>Each keyframe is animated with a single reference, plus an end frame for long moves.</p><span class="tool">Kling 4 via Runway</span></div>
+      <div class="stage rv"><span class="n">05</span><h4>Quality check</h4><p>Frames are sampled and checked for drift, morphing, extra limbs and broken physics.</p><span class="tool">Claude vision · checklist</span></div>
+      <div class="stage rv d1"><span class="n">06</span><h4>Assembly</h4><p>Shots are trimmed, joined and scaled to a picture-only cut, ready for sound.</p><span class="tool">Python · FFmpeg</span></div>
+      <div class="stage human rv d2"><span class="n">07</span><h4>Review</h4><p>Previews land in a GitHub issue. Each shot gets an /ok or a /redo with a reason.</p><span class="tool">Human approval</span></div>
+      <div class="stage human rv d3"><span class="n">08</span><h4>Finish &amp; post</h4><p>Music, sound, grade and export, then published with honest AI labels.</p><span class="tool">DaVinci · YouTube · X</span></div>
+    </div>
+    <p class="loop-note rv">Every /redo reason is logged and fed back into the next script and the quality checklist.</p>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Technology</span><h2 class="rv d1">The architecture</h2></div>
+      <p class="lede rv d2" style="max-width:460px">How the services talk to each other. Keys live in GitHub Secrets, never in code or chat.</p>
+    </div>
+    <div class="arch rv">
+      <svg viewBox="0 0 1000 400" role="img" aria-label="Pipeline architecture diagram">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9a9187"/></marker>
+          <marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d2733f"/></marker>
+        </defs>
+        <style>
+          .bx{fill:#0f0d0c;stroke:rgba(236,228,216,.22);stroke-width:1}
+          .hb{fill:rgba(210,115,63,.08);stroke:#d2733f;stroke-width:1.2}
+          .t{font:500 20px 'Cormorant Garamond',Georgia,serif;fill:#ece4d8}
+          .s{font:12px 'Instrument Sans',Arial,sans-serif;fill:#9a9187}
+          .k{font:500 9.5px 'Instrument Sans',Arial,sans-serif;fill:#e9b779;letter-spacing:.14em}
+          .ln{stroke:#9a9187;stroke-width:1.2;fill:none}
+          .fb{stroke:#d2733f;stroke-width:1.2;fill:none;stroke-dasharray:5 5}
+          .lb{font:11px 'Instrument Sans',Arial,sans-serif;fill:#6d665e}
+        </style>
+        <!-- row 1 -->
+        <rect class="bx" x="20" y="30" width="200" height="110"/><text class="k" x="36" y="54">PLAN · CODE</text><text class="t" x="36" y="80">Claude</text><text class="s" x="36" y="102">Shot list, prompts,</text><text class="s" x="36" y="119">pipeline engineering</text>
+        <rect class="bx" x="270" y="30" width="200" height="110"/><text class="k" x="286" y="54">ORCHESTRATE</text><text class="t" x="286" y="80">GitHub Actions</text><text class="s" x="286" y="102">Python runner, Secrets,</text><text class="s" x="286" y="119">versioned episodes</text>
+        <rect class="bx" x="520" y="30" width="200" height="110"/><text class="k" x="536" y="54">GENERATE</text><text class="t" x="536" y="80">Runway API</text><text class="s" x="536" y="102">Nano Banana Pro · Kling 4</text><text class="s" x="536" y="119">Seedance 2 · Gen-4.5</text>
+        <rect class="bx" x="770" y="30" width="210" height="110"/><text class="k" x="786" y="54">CHECK · ASSEMBLE</text><text class="t" x="786" y="80">QC + FFmpeg</text><text class="s" x="786" y="102">Claude vision vs checklist,</text><text class="s" x="786" y="119">picture-only cut</text>
+        <path class="ln" d="M220 85H266" marker-end="url(#ah)"/><path class="ln" d="M470 85H516" marker-end="url(#ah)"/><path class="ln" d="M720 85H766" marker-end="url(#ah)"/>
+        <text class="lb" x="226" y="77">episode</text><text class="lb" x="476" y="77">jobs</text><text class="lb" x="726" y="77">clips</text>
+        <!-- down -->
+        <path class="ln" d="M875 140V246" marker-end="url(#ah)"/><text class="lb" x="882" y="200">previews</text>
+        <!-- row 2 -->
+        <rect class="bx" x="770" y="250" width="210" height="110"/><text class="k" x="786" y="274">REVIEW</text><text class="t" x="786" y="300">Approval issue</text><text class="s" x="786" y="322">Previews branch, one issue</text><text class="s" x="786" y="339">per film</text>
+        <rect class="hb" x="520" y="250" width="200" height="110"/><text class="k" x="536" y="274">HUMAN</text><text class="t" x="536" y="300">Director</text><text class="s" x="536" y="322">/ok · /redo with a reason</text><text class="s" x="536" y="339">per keyframe and shot</text>
+        <rect class="hb" x="270" y="250" width="200" height="110"/><text class="k" x="286" y="274">HUMAN</text><text class="t" x="286" y="300">DaVinci Resolve</text><text class="s" x="286" y="322">Music, sound design,</text><text class="s" x="286" y="339">grade, export</text>
+        <rect class="bx" x="20" y="250" width="200" height="110"/><text class="k" x="36" y="274">PUBLISH</text><text class="t" x="36" y="300">YouTube · X</text><text class="s" x="36" y="322">YouTube Data API via</text><text class="s" x="36" y="339">Google Cloud OAuth</text>
+        <path class="ln" d="M770 305H724" marker-end="url(#ah)"/><path class="ln" d="M520 305H474" marker-end="url(#ah)"/><path class="ln" d="M270 305H224" marker-end="url(#ah)"/>
+        <text class="lb" x="476" y="297">approved</text><text class="lb" x="228" y="297">master</text>
+        <!-- feedback -->
+        <path class="fb" d="M600 250C600 196 140 210 120 144" marker-end="url(#ahr)"/>
+        <text class="lb" x="36" y="228" style="fill:#d2733f">redo reasons → feedback log → next script</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">The stack</span><h2 class="rv d1">What each tool is for</h2></div></div>
+    <div class="stack">
+      <div class="rv"><span class="role">Intelligence</span><h4>Claude</h4><p>Writes shot lists and prompts, checks frames against the quality checklist, and helped build the pipeline itself.</p></div>
+      <div class="rv d1"><span class="role">Orchestration</span><h4>GitHub Actions</h4><p>Runs every production job, keeps API keys in Secrets, and stores every episode, prompt and preview under version control.</p></div>
+      <div class="rv d2"><span class="role">Generative media</span><h4>Runway API</h4><p>One API for image and video models: Nano Banana Pro for designs and keyframes, Kling 4 for motion, plus Seedance 2 and Gen-4.5 for tests.</p></div>
+      <div class="rv"><span class="role">Assembly</span><h4>Python &amp; FFmpeg</h4><p>Deterministic editing: trims, joins, scaling, end cards and loudness checks. The same input always gives the same cut.</p></div>
+      <div class="rv d1"><span class="role">Finishing</span><h4>DaVinci Resolve</h4><p>Where a human takes over: music, sound design, grade and the final vertical export.</p></div>
+      <div class="rv d2"><span class="role">Distribution</span><h4>Google Cloud</h4><p>OAuth for the YouTube Data API, so approved films can be uploaded straight from the pipeline.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Quality bar</span><h2 class="rv d1">Three gates. Every film.</h2></div>
+      <p class="lede rv d2" style="max-width:460px">A written checklist every production has to pass. When something gets rejected, the reason becomes a new rule.</p>
+    </div>
+    <div class="gates">
+      <div class="gate rv"><span class="g">Gate 1</span><h4>Keyframe</h4><ul><li>Characters match their locked designs</li><li>No duplicates or extra people in frame</li><li>Framing and angle match the script</li><li>Continuity with the previous shot</li></ul></div>
+      <div class="gate rv d1"><span class="g">Gate 2</span><h4>Shot</h4><ul><li>No morphing, flicker or extra limbs</li><li>Physically plausible: nothing walks through solid objects</li><li>Camera movement looks intentional</li><li>Models only switch at a cut</li></ul></div>
+      <div class="gate rv d2"><span class="g">Gate 3</span><h4>Final cut</h4><ul><li>The first two seconds hook</li><li>The story reads in one viewing</li><li>The ending lands</li><li>Sound at streaming loudness, no clipping</li></ul></div>
+    </div>
+    <p class="small muted rv" style="margin-top:40px">Pipeline source code is private. A walkthrough is available on request.</p>
+  </div>
+</section>
+
+<section class="cta rule">
+  <div class="wrap">
+    <div class="eye" aria-hidden="true"></div>
+    <h2 class="rv">See the experiments that<br><em>shaped these rules.</em></h2>
+    <div class="btns rv d1"><a class="btn primary" href="lab.html">Enter the Lab <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><span class="dot"></span>Eldersire Studios</a>
+      <p class="small" style="margin-top:16px;max-width:320px">An independent, human-directed film studio exploring what AI filmmaking can be. Original worlds only.</p>
+    </div>
+    <div><h5>Studio</h5><ul><li><a href="films.html">Films</a></li><li><a href="studio.html">Behind the Studio</a></li><li><a href="lab.html">The Lab</a></li><li><a href="about.html">About</a></li></ul></div>
+    <div><h5>Follow</h5><ul><li><a href="https://www.youtube.com/channel/UCCBXbzFrJePExFDeBLUWiGw" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://x.com/RishiPatlolla" target="_blank" rel="noopener">X</a></li></ul></div>
+    <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="fine"><span>&copy; <span id="y">2026</span> Eldersire Studios. All characters and worlds are original.</span><span>Made by a human, with AI.</span></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

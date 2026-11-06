@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rust Titan — Eldersire Studios</title>
+<meta name="description" content="Rust Titan: an experimental anime cinematic. A young explorer, a buried mechanical giant.">
+<meta property="og:title" content="Rust Titan — Eldersire Studios">
+<meta property="og:description" content="Rust Titan: an experimental anime cinematic. A young explorer, a buried mechanical giant.">
+<meta property="og:image" content="https://eldersirestudios.com/assets/img/poster.jpg">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%235fe6ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Eldersire Studios home"><span class="dot"></span>Eldersire Studios</a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="nav-links"><a href="films.html" class="on">Films</a><a href="studio.html">Studio</a><a href="lab.html">Lab</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<section>
+  <div class="wrap film-hero">
+    <div class="sticky load">
+      <div class="frame"><video src="assets/film/rust_titan.mp4" poster="assets/img/poster.jpg" controls playsinline preload="metadata"></video></div>
+      <div class="frame-cap"><span>Sound on</span><b>25 seconds</b></div>
+    </div>
+    <div>
+      <span class="eyebrow load d1">Film 001 · Released November 2026</span>
+      <h1 class="load d1">Rust Titan</h1>
+      <p class="tagline load d2">An experimental anime cinematic.</p>
+      <p class="lede load d2">In a desert of buried machines, a young explorer named Sola brushes the sand from a strange rusted dome. Under her hand, something sparks. Something ancient opens its eye, and a giant rises from the dunes.</p>
+      <div class="watch load d3">
+        <a class="btn primary" href="https://www.youtube.com/shorts/NaF11bCmjj4" target="_blank" rel="noopener">Watch on YouTube <span class="arr">→</span></a>
+        <a class="btn" href="https://x.com/RishiPatlolla/status/2118798592731414795" target="_blank" rel="noopener">Watch on X</a>
+      </div>
+      <dl class="credits load d4">
+        <div><dt>Written &amp; directed</dt><dd>Rishi Patlolla</dd></div>
+        <div><dt>Format</dt><dd>Vertical short film · 1080×1920 · 24 fps</dd></div>
+        <div><dt>Style</dt><dd>Anime-inspired science fiction</dd></div>
+        <div><dt>Design &amp; keyframes</dt><dd>Nano Banana Pro, from a locked character and world bible</dd></div>
+        <div><dt>Motion</dt><dd>Runway multi-shot and Kling 4 via the Runway API</dd></div>
+        <div><dt>Orchestration</dt><dd>Claude and GitHub Actions</dd></div>
+        <div><dt>Edit &amp; finishing</dt><dd>FFmpeg assembly, DaVinci Resolve finishing</dd></div>
+        <div><dt>Music &amp; sound</dt><dd>Selected, edited and mixed by hand</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule" style="margin-top:clamp(80px,10vw,140px)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">Selected frames</span><h2 class="rv d1">Five beats, one discovery</h2></div></div>
+    <div class="frames">
+      <figure class="rv"><img src="assets/img/frame_19.jpg" alt="The Titan stands over Sola" loading="lazy"><figcaption><b>05 · The rise</b>The payoff is held long enough to land.</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/frame_1.jpg" alt="Sola in the machine graveyard" loading="lazy"><figcaption><b>01 · The world</b>A graveyard of half-buried machines.</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/frame_4.jpg" alt="Sola brushing sand from the dome" loading="lazy"><figcaption><b>02 · The find</b>Curiosity before scale.</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/frame_10.jpg" alt="Sparks under her palm" loading="lazy"><figcaption><b>03 · Contact</b>The insert shot sells the moment.</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/frame_12.jpg" alt="The eye opens" loading="lazy"><figcaption><b>04 · The eye</b>The one cyan light that became the studio mark.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Design first</span><h2 class="rv d1">Locked before a single frame moves</h2></div>
+      <p class="lede rv d2" style="max-width:460px">Sola, the Titan and the desert were designed and frozen as references first. Every keyframe is generated against them, so the characters stay on-model shot to shot.</p>
+    </div>
+    <div class="trio">
+      <figure class="rv"><img src="assets/img/design_sola.jpg" alt="Sola character design" loading="lazy"><figcaption><b>Sola</b>Goggles, scarf, satchel. The details checked in every shot.</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/design_titan.jpg" alt="Rust Titan design" loading="lazy"><figcaption><b>The Titan</b>Rust-red plates, one cyan eye.</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/design_desert.jpg" alt="Desert world design" loading="lazy"><figcaption><b>The world</b>A desert of buried machines at golden hour.</figcaption></figure>
+    </div>
+    <h3 class="rv" style="margin:80px 0 26px">Approved keyframes</h3>
+    <div class="kfs">
+      <figure class="rv"><img src="assets/img/kf_s1.jpg" alt="Keyframe 1" loading="lazy"><figcaption>Shot 1</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/kf_s2.jpg" alt="Keyframe 2" loading="lazy"><figcaption>Shot 2</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/kf_s3.jpg" alt="Keyframe 3" loading="lazy"><figcaption>Shot 3</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/kf_s4.jpg" alt="Keyframe 4" loading="lazy"><figcaption>Shot 4</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/kf_s5.jpg" alt="Keyframe 5" loading="lazy"><figcaption>Shot 5</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Raw vs final</span><h2 class="rv d1">What the machine gave us,<br><em>and what we kept.</em></h2></div>
+    </div>
+    <div class="compare">
+      <div class="rv"><span class="label">Raw · multi-shot generation</span><div class="frame"><video src="assets/film/raw_multishot.mp4" muted loop playsinline controls preload="metadata"></video></div><figcaption>15 seconds straight out of Runway's multi-shot recipe. No sound, no grade, no edit.</figcaption></div>
+      <div class="rv d1"><span class="label">Raw · the rise (Kling 4)</span><div class="frame"><video src="assets/film/raw_rise.mp4" muted loop playsinline controls preload="metadata"></video></div><figcaption>A separate shot, anchored to a final frame generated from the locked Titan design.</figcaption></div>
+      <div class="final rv d2"><span class="label final">Final cut</span><div class="frame"><video src="assets/film/rust_titan.mp4" poster="assets/img/poster.jpg" controls playsinline preload="none"></video></div><figcaption>Edited, re-timed, scored, sound-designed and finished in DaVinci Resolve.</figcaption></div>
+    </div>
+    <ol class="changes">
+      <li class="rv"><b>Cut the opening walk</b>Sola walked straight through a metal bolt. It failed our physical-plausibility check, so the film now opens on the world instead.</li>
+      <li class="rv d1"><b>Removed a mid-shot model switch</b>An earlier version handed off between two models halfway through the rise, and you could see it. New rule: models only change at a cut.</li>
+      <li class="rv"><b>Anchored the rise with an end frame</b>Without one, the Titan drifted into a different robot by the end of the shot. With a locked final frame, it stays itself.</li>
+      <li class="rv d1"><b>Swapped an off-model shot</b>One generation lost Sola's goggles. It was replaced, not hidden.</li>
+      <li class="rv"><b>Built the ending by hand</b>The Titan fades while its eye keeps glowing, then the studio card. Composited deterministically, not generated.</li>
+      <li class="rv d1"><b>Music and sound, by a human</b>Picture is locked first; then music, desert ambience and metal are cut to the beats and mixed to streaming loudness.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">The process</span><h2 class="rv d1">How Rust Titan was made</h2></div></div>
+    <div class="pipe">
+      <div class="stage human rv"><span class="n">01</span><h4>Idea &amp; shot list</h4><p>A five-beat story: world, find, contact, eye, rise. Each shot gets framing, angle and movement.</p><span class="tool">Rishi · Claude</span></div>
+      <div class="stage rv d1"><span class="n">02</span><h4>Design bible</h4><p>Sola, the Titan and the desert designed, compared across models, then locked.</p><span class="tool">Nano Banana Pro</span></div>
+      <div class="stage rv d2"><span class="n">03</span><h4>Model shoot-out</h4><p>The same shots run through five video models. Kling 4 held the designs best.</p><span class="tool">Runway API · GitHub Actions</span></div>
+      <div class="stage human rv d3"><span class="n">04</span><h4>Edit &amp; finish</h4><p>Best takes cut together, ending composited, music and sound added, export checked.</p><span class="tool">FFmpeg · DaVinci Resolve</span></div>
+    </div>
+    <div class="btns rv" style="margin-top:50px">
+      <a class="btn" href="lab.html">See the model shoot-out <span class="arr">→</span></a>
+      <a class="btn" href="studio.html">The full pipeline</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><span class="dot"></span>Eldersire Studios</a>
+      <p class="small" style="margin-top:16px;max-width:320px">An independent, human-directed film studio exploring what AI filmmaking can be. Original worlds only.</p>
+    </div>
+    <div><h5>Studio</h5><ul><li><a href="films.html">Films</a></li><li><a href="studio.html">Behind the Studio</a></li><li><a href="lab.html">The Lab</a></li><li><a href="about.html">About</a></li></ul></div>
+    <div><h5>Follow</h5><ul><li><a href="https://www.youtube.com/channel/UCCBXbzFrJePExFDeBLUWiGw" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://x.com/RishiPatlolla" target="_blank" rel="noopener">X</a></li></ul></div>
+    <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="fine"><span>&copy; <span id="y">2026</span> Eldersire Studios. All characters and worlds are original.</span><span>Made by a human, with AI.</span></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
