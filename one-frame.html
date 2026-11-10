@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Frame — Eldersire Studios</title>
+<meta name="description" content="One Frame: a spec product film for Oracle AI Database. An editor finds one shot in two million frames by describing it.">
+<meta property="og:title" content="One Frame — Eldersire Studios">
+<meta property="og:description" content="One Frame: a spec product film for Oracle AI Database. An editor finds one shot in two million frames by describing it.">
+<meta property="og:image" content="https://eldersirestudios.com/assets/img/poster.jpg">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0a09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%235fe6ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Eldersire Studios home"><span class="dot"></span>Eldersire Studios</a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="nav-links"><a href="films.html" class="on">Films</a><a href="studio.html">Studio</a><a href="lab.html">Lab</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<section class="wide-hero">
+  <div class="wrap">
+    <div class="load">
+      <div class="frame wide"><video src="assets/film/one_frame.mp4" poster="assets/img/one_frame_poster.jpg" controls playsinline preload="metadata"></video></div>
+      <div class="frame-cap"><span>Sound on · 16:9</span><b>35 seconds</b></div>
+    </div>
+    <div class="wide-info">
+      <div>
+        <span class="eyebrow load d1">Spec film · November 2026</span>
+        <h1 class="load d1">One Frame</h1>
+        <p class="tagline load d2">A spec product film for Oracle AI Database.</p>
+        <p class="lede load d2">An editor is hunting for one shot in two million frames. Searching by file name finds nothing. Describing the shot finds it in seconds. The film is based on a real, published Oracle customer story about AI Vector Search in a post-production pipeline.</p>
+        <p class="small load d3" style="margin-top:22px">Spec concept, made independently. Not affiliated with or endorsed by Oracle.</p>
+      </div>
+      <dl class="credits load d3">
+        <div><dt>Written &amp; directed</dt><dd>Rishi Patlolla</dd></div>
+        <div><dt>Format</dt><dd>Horizontal spec film · 1920×1080 · 24 fps</dd></div>
+        <div><dt>Story</dt><dd>Problem, technology, result: told without voiceover</dd></div>
+        <div><dt>Design &amp; keyframes</dt><dd>Nano Banana Pro, from locked character and set references</dd></div>
+        <div><dt>Motion</dt><dd>Kling 4 single shots via the Runway API</dd></div>
+        <div><dt>On-screen UI &amp; titles</dt><dd>Original interface and motion titles, tracked into the footage</dd></div>
+        <div><dt>Music &amp; sound</dt><dd>Original score and sound design</dd></div>
+        <div><dt>Orchestration</dt><dd>Claude and GitHub Actions</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule" style="margin-top:clamp(70px,9vw,120px)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow rv">Selected frames</span><h2 class="rv d1">Six beats, one search</h2></div></div>
+    <div class="wide-frames">
+      <figure class="rv"><img src="assets/img/of_s1.jpg" alt="An editor alone in a dark editing suite" loading="lazy"><figcaption><b>01 · The problem</b>The shot is somewhere in two million frames.</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/of_s2.jpg" alt="A search for lighthouse returns 0 results" loading="lazy"><figcaption><b>02 · Zero results</b>File names don't describe what's in the footage.</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/of_s3.jpg" alt="Film strips streaming into a galaxy of data" loading="lazy"><figcaption><b>03 · Into the data</b>Every frame becomes searchable by meaning.</figcaption></figure>
+      <figure class="rv"><img src="assets/img/of_s4.jpg" alt="An amber cluster lights up beside a sealed glass sphere" loading="lazy"><figcaption><b>04 · The match</b>Describe the shot. Only what your team can see.</figcaption></figure>
+      <figure class="rv d1"><img src="assets/img/of_s6.jpg" alt="One glowing film frame rises out of the galaxy" loading="lazy"><figcaption><b>05 · Found</b>One frame rises out of millions.</figcaption></figure>
+      <figure class="rv d2"><img src="assets/img/of_s5.jpg" alt="The editor smiles as the lighthouse shot plays" loading="lazy"><figcaption><b>06 · The result</b>The right frame, in seconds.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec rule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow rv">Raw vs final</span><h2 class="rv d1">What changed<br><em>on the way to the cut.</em></h2></div>
+      <p class="lede rv d2" style="max-width:460px">Every shot was approved as a keyframe, checked as a clip, and fixed or replaced when it didn't hold up.</p>
+    </div>
+    <ol class="changes">
+      <li class="rv"><b>Tested for sharpness, then switched models</b>The first multi-shot pass looked soft. A measured sharpness test across models moved the whole film to Kling 4 single shots for clean 1080p.</li>
+      <li class="rv d1"><b>Re-animated the search shot</b>The screen showed typing while her hands were still. The shot was regenerated so her hands type with the search.</li>
+      <li class="rv"><b>Built the interface by hand</b>AI can't render readable UI, so the media library, the search and the results were designed as an original interface and tracked onto her monitor.</li>
+      <li class="rv d1"><b>Fixed the eyeline</b>She was smiling at a blank screen. The found shot now plays on the monitor she's actually looking at.</li>
+      <li class="rv"><b>Wrote for reading speed</b>On-screen lines were cut to fit about three words a second, then animated word by word.</li>
+      <li class="rv d1"><b>Original score and sound</b>Keys, glass, air and the sea, all made for this film, with one musical rise saved for the wave.</li>
+    </ol>
+    <div class="btns rv" style="margin-top:50px">
+      <a class="btn" href="studio.html">The full pipeline <span class="arr">→</span></a>
+      <a class="btn" href="films.html">All films</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><span class="dot"></span>Eldersire Studios</a>
+      <p class="small" style="margin-top:16px;max-width:320px">An independent, human-directed film studio exploring what AI filmmaking can be. Original worlds only.</p>
+    </div>
+    <div><h5>Studio</h5><ul><li><a href="films.html">Films</a></li><li><a href="studio.html">Behind the Studio</a></li><li><a href="lab.html">The Lab</a></li><li><a href="about.html">About</a></li></ul></div>
+    <div><h5>Follow</h5><ul><li><a href="https://www.youtube.com/channel/UCCBXbzFrJePExFDeBLUWiGw" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://x.com/RishiPatlolla" target="_blank" rel="noopener">X</a></li></ul></div>
+    <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="fine"><span>&copy; <span id="y">2026</span> Eldersire Studios. All characters and worlds are original.</span><span>Made by a human, with AI.</span></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
