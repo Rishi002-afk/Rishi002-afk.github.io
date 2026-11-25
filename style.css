@@ -335,3 +335,32 @@ footer .fine{grid-column:1/-1;display:flex;justify-content:space-between;flex-wr
 .wide-frames img{width:100%;aspect-ratio:16/9;object-fit:cover}
 @media (max-width:900px){.wide-info{grid-template-columns:1fr}.wide-frames{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.wide-frames{grid-template-columns:1fr}}
+
+/* case study (making-world-02.html) */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:760px}
+.duo img{width:100%;aspect-ratio:9/16;object-fit:cover}
+.pairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.pair img{width:100%;aspect-ratio:9/16;object-fit:cover}
+.pair img:first-child{opacity:.72;filter:saturate(.6)}
+.mapgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,90px);align-items:center}
+.map{width:100%;max-width:420px;display:block;margin-left:auto}
+.map text{font-family:var(--sans,inherit);font-size:11px;fill:#d9cdb8;letter-spacing:.04em}
+.map .m-dim{fill:#8a7a63;font-size:10px}
+.map .m-gold{fill:#e0a64e}
+.map .m-pit{fill:#0c0a08;stroke:#3a3026;stroke-width:1}
+.map .m-path{stroke:#e0a64e;stroke-width:1.5;stroke-dasharray:5 5}
+.map .m-door rect{fill:#f3efe6}
+.map .m-bell circle{fill:#bfc6cc}
+.map .m-him{fill:#e0a64e}
+.map .m-sun circle{fill:#b07a3a;opacity:.8}
+.facts{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.facts li{padding-left:18px;position:relative;color:var(--muted);line-height:1.55}
+.facts li::before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:var(--sand,#e0a64e)}
+.rules{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 60px;counter-reset:r}
+.rules li{counter-increment:r;padding:24px 0 24px 44px;border-top:1px solid var(--line);position:relative;color:var(--muted);line-height:1.55}
+.rules li::before{content:counter(r,decimal-leading-zero);position:absolute;left:0;top:24px;font-family:var(--serif);font-style:italic;color:var(--rust)}
+.rules b{display:block;color:var(--text);font-weight:500;margin-bottom:4px}
+.rules span{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}.map{margin:0 auto}}
+@media (max-width:760px){.pairs{grid-template-columns:1fr}.rules{grid-template-columns:1fr}.duo{gap:10px}}
